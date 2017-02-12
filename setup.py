@@ -3,7 +3,7 @@
 
 import os
 import sys
-from distutils.core import setup
+from setuptools import setup
 
 PACKAGES = ['dmc']
 REQUIRES = ['iso8601', 'pytz', 'humanize', 'python-dateutil']
@@ -28,6 +28,5 @@ setup(
     package_data={'': ['LICENSE', 'NOTICE', 'README']},
     license=get_init_val('license'),
     install_requires=REQUIRES,
-    requires=REQUIRES,
     packages=PACKAGES
 )
